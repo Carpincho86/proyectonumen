@@ -6,7 +6,8 @@ import InfoCards from './Components/infoCards'
 import OtherProducts from './Components/OtherProducts'
 import GiftBox from './Components/GiftBox'
 import Gallery from './Components/Gallery'
-
+import Redes from './Components/Redes'
+import Blog from './Components/Blog'
 
 const App = () => {
   return (
@@ -17,6 +18,8 @@ const App = () => {
       <OtherProducts/>
       <GiftBox/>
       <Gallery/>
+      <Blog/>
+      <Redes/>
       <Footer/>
     </div>
   )

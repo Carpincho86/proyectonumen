@@ -1,0 +1,14 @@
+/* Contenedor de los iconos de las redes sociales */
+.contenedor_icono:hover a {
+	animation: icono .5s ease;
+}
+
+/* rotacion 3D */
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
