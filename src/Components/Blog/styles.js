@@ -7,7 +7,7 @@ export const BG_IMG = {
     backgroundRepeat: 'no-repeat',
 };
 
-export const TITLE = "text-center text-2xl text-[#FFF] font-sans font-semibold sm:text-3xl";
+export const TITLE = "text-center text-2xl text-[#FFF] font-sans italic font-semibold sm:text-3xl";
 
 export const BG_CONTAINER = "flex flex-col items-center gap-4 p-2 w-auto";
 

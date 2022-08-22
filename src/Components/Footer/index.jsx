@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "../../img/logo.png";
+import logo from '../../img/Logo.svg';
 import { productos, categorias, seguinos } from "./constants";
 import { Icon } from '@iconify/react';
 import * as styles from "./styles";
@@ -11,7 +11,7 @@ const Footer = () => {
     return (
 		<div className={styles.GRID}>
 			<div className={styles.LOGO_CONTAINER}>
-          <img src={logo} alt="Logo" className={styles.LOGO_IMG}/>
+          <img src={logo} alt="logo" className={styles.LOGO_IMG}/>
 			</div>
 			<div className={styles.CHILD_GRID}>
                 <a className={styles.TITLE_COL} href="#">Productos</a>
