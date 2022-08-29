@@ -17,8 +17,8 @@ const App = () => {
       <InfoCards/>
       <OtherProducts/>
       <GiftBox/>
-      <Gallery/>
       <Blog/>
+      <Gallery/>
       <Redes/>
       <Footer/>
     </div>

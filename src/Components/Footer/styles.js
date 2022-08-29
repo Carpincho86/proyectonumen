@@ -6,9 +6,9 @@ export const LOGO_IMG = "object-cover xl:ml-1";
 
 export const CHILD_GRID = "flex flex-col gap-1 p-3";
 
-export const TITLE_COL = "font-bold text-lg capitalize italic text-[#379908]";
+export const TITLE_COL = "font-bold text-lg capitalize italic text-green1";
 
-export const SUB_LINK = "text-md capitalize italic hover:text-[#379908]";
+export const SUB_LINK = "text-md capitalize italic hover:text-green1";
 
 export const WP_ANIMATION = "inline-block animate-bounce";
 
