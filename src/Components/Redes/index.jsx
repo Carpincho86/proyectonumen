@@ -10,7 +10,7 @@ const Redes = () => {
         <div className={styles.BG_CONTAINER} style={styles.BG_IMG}>
             <div>
                 {/* Titulos */}
-                <h2 className={styles.TITLE}><span className='text-[#379908]'>Contale a un </span><span className='text-[#E1C050]'>Amigo</span></h2>
+                <h2 className={styles.TITLE}><span className='text-green1'>Contale a un </span><span className='text-orange1'>Amigo</span></h2>
             </div>
             <div className={styles.DIV_REDES}>
                 {/* Cargar las redes */}
