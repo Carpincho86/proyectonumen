@@ -11,11 +11,12 @@ import Blog from './Components/Blog'
 
 const App = () => {
   return (
-    <div>
+    // Dar espacio entre los componentes
+    <div className='flex flex-col space-y-8'>
       <NavBar/>
-      <DiscountCards/>
-      <InfoCards/>
-      <OtherProducts/>
+      <DiscountCards/> 
+      <InfoCards/> 
+      <OtherProducts/> 
       <GiftBox/>
       <Blog/>
       <Gallery/>
