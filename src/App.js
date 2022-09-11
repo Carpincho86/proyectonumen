@@ -14,7 +14,7 @@ const App = () => {
 
   return (
     // Dar espacio entre los componentes
-    <div className='flex flex-col space-y-8'>
+    <div className='flex flex-col space-y-16'>
       <NavBar items={items} setItems={setItems}/>
       <DiscountCards items={items} setItems={setItems}/> 
       <InfoCards/> 
