@@ -15,6 +15,16 @@ module.exports = {
       'orange1':  '#E1C050',
       'orange2':  '#FFD489',
     },
+    screens: {
+      'tablet': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 }
