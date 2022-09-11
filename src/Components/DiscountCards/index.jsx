@@ -4,41 +4,32 @@ import * as styles from "./styles";
 import Swal from 'sweetalert2'
 import Logo from '../Images/Logo/Logo.svg'
 
-// 'green1':   '#379908',
-// 'green2':   '#98AD21',
-// 'orange1':  '#E1C050',
-// 'orange2':  '#FFD489',
-const alerta = () => {
-  Swal.fire({
-    title: '¿Desea agregar el producto al carrito?',
-    text: "Luego podrá modificar su cantidad.",
-    // icon: 'question',
-    imageUrl: Logo,
-    // imageWidth: 614,
-    // imageHeight: 116,
-    showCancelButton: true,
-    confirmButtonColor: styles.COLORS.green1,
-    cancelButtonColor: styles.COLORS.orange1,
-    confirmButtonText: 'Agregar al carrito!', 
-    cancelButtonText: 'Cancelar'
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire({
-        icon: 'success',
-        title: 'Gracias!',
-        text: 'Su producto fue agregado al carrito.',
-        confirmButtonColor: styles.COLORS.green1,
+const DiscountCards = ({items,setItems}) => {
+  const alerta = () => {
+    Swal.fire({
+      title: '¿Desea agregar el producto al carrito?',
+      text: "Luego podrá modificar su cantidad.",
+      // icon: 'question',
+      imageUrl: Logo,
+      // imageWidth: 614,
+      // imageHeight: 116,
+      showCancelButton: true,
+      confirmButtonColor: styles.COLORS.green1,
+      cancelButtonColor: styles.COLORS.orange1,
+      confirmButtonText: 'Agregar al carrito!', 
+      cancelButtonText: 'Cancelar'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          icon: 'success',
+          title: 'Gracias!',
+          text: 'Su producto fue agregado al carrito.',
+          confirmButtonColor: styles.COLORS.green1,
+        })
+        setItems(items+1);
       }
-        // 'Gracias!',
-        // 'Su producto fue agregado al carrito.',
-        // 'success',
-      )
-    }
-  })
-}
-
-
-const DiscountCards = () => {
+    })
+  };
   return (
     <>
       <div className={styles.TITLE}>
@@ -56,6 +47,7 @@ const DiscountCards = () => {
                 <p className={styles.PRICE}>$ {producto.descuento !== 0 ? producto.precio : 0 }</p>
               </div>
               <button className={styles.BUTTON} onClick={() => alerta()}>{texto.boton}</button>
+              {/* <button className={styles.BUTTON} value={producto.id} onClick={addToCart}>{texto.boton}</button> */}
           </div>
         ))}
       </div>

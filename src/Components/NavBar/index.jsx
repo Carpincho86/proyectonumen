@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import * as styles from "./styles";
 import { links } from "./constants";
 
-function NavBar() {
+function NavBar({items,setItems}) {
   return (
     <>
       <nav className={styles.NAV}>
@@ -31,7 +31,7 @@ function NavBar() {
         <div className={styles.CART_CONTEINER}>
           <AiOutlineShoppingCart className={styles.CART_ICON} />
 
-          <div className={styles.CART_NOTIFICATIONS}>0</div>
+          <div className={styles.CART_NOTIFICATIONS}>{items}</div>
         </div>
       </nav>
     </>

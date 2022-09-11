@@ -13,7 +13,7 @@ export const MOBILE_CAROUSEL = [
         loop: true, 
         autoplay: 6000
     },
-    {   
+    {
         breakpoint: 767,  // max-width del punto de quiebre
         cols: 2, 
         loop: true, 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'better-react-carousel'
+// import {Carousel} from 'flowbite-react'
 import {texto, listado} from './listaGallery'
 import * as styles from './styles'
 const Gallery = () => {

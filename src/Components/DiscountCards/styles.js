@@ -1,23 +1,23 @@
-export const TITLE = "flex flex-row justify-center pt-8 space-x-3 text-4xl text-green1"
+export const TITLE = "flex flex-row justify-center pt-2 md:pt-8 space-x-1 text-2xl md:text-4xl text-green1"
 
-export const CARD_CONTAINER = "flex flex-row justify-center my-8 space-x-6 text-center"
+export const CARD_CONTAINER = "flex flex-wrap md:flex-nowrap md:flex-row justify-center my-2 md:my-8 space-x-1 md:space-x-6 text-center"
 
-export const CARD = "flex flex-col items-center h-[332px] w-[270px] rounded-3xl border border-green2"
+export const CARD = "flex flex-col items-center mt-1 h-[200px] w-[135px]  md:h-[332px] md:w-[270px] rounded-lg md:rounded-3xl border border-green2"
 
-export const IMAGE = "h-[190px] w-[270px] object-scale-down"
+export const IMAGE = "h-[95px] w-[135px] md:h-[190px] md:w-[270px] object-scale-down"
 
 // export const NAME = "my-2 text-lg font-bold text-center"
-export const NAME = "my-1 text-base font-bold text-green1 text-center"
+export const NAME = "my-1 text-xs md:text-base font-bold text-green1 text-center"
 
 export const PRICE_CONTAINER = "flex flex-row justify-center items-baseline"
 
-export const DISCOUNT = "mb-1 text-2xl font-bold text-center"
+export const DISCOUNT = "mb-1 text-base md:text-2xl font-bold text-center"
 
-export const PRICE = "mb-1 px-2 text-xl line-through decoration-2 font-bold text-gray"
+export const PRICE = "mb-1 px-2 text-sm md:text-xl line-through decoration-2 font-bold text-gray"
 
 // export const BUTTON = "px-6 py-2 bg-orange-500 rounded-xl"
 // export const BUTTON = "px-6 py-2 bg-orange1 font-bold text-white rounded-xl"
-export const BUTTON = "h-[40px] w-[230px] mb-2 font-bold text-white rounded-xl bg-orange1 hover:bg-orange2"
+export const BUTTON = "h-[25px] w-[135px] md:h-[40px] md:w-[230px] md:mb-2 text-sm md:text-xl font-bold text-white rounded-xl bg-orange1 hover:bg-orange2"
 
 export const COLORS = {
         green1:   '#379908',

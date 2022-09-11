@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
 import DiscountCards from './Components/DiscountCards'
@@ -10,18 +10,20 @@ import Redes from './Components/Redes'
 import Blog from './Components/Blog'
 
 const App = () => {
+  const [items,setItems] = useState(0);
+
   return (
     // Dar espacio entre los componentes
     <div className='flex flex-col space-y-8'>
-      <NavBar/>
-      <DiscountCards/> 
+      <NavBar items={items} setItems={setItems}/>
+      <DiscountCards items={items} setItems={setItems}/> 
       <InfoCards/> 
       <OtherProducts/> 
       <GiftBox/>
       <Blog/>
       <Gallery/>
       <Redes/>
-      <Footer/>
+      <Footer/>     
     </div>
   )
 }
