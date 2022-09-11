@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../images/Logo.svg";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import * as styles from "./styles";
 import { links } from "./constants";
+import BurgerButton from "../BurgerButton";
+import { Icon } from "@iconify/react";
+import "./styles.css"
 
 function NavBar({items,setItems}) {
+  const [clicked, setClicked] = useState(false);
+
+  const changerClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <>
       <nav className={styles.NAV}>
@@ -15,8 +24,18 @@ function NavBar({items,setItems}) {
           </a>
         </div>
         <div className={styles.MENU_CONTEINER}>
-          <GiHamburgerMenu className={styles.MENU_ICON} />
+          <BurgerButton  changerClick={changerClick} />
         </div>
+
+        <ul className={clicked ? `custom-bg-paterns ${styles.MENU}` : styles.MENU_NONE}>
+          {links.map((item, index) => (
+            <li className={styles.ANCHOR}>
+              <a key={index} href={item.url}>
+                {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
 
         <ul className={styles.ANCHOR_LIST}>
           {links.map((item, index) => (
@@ -29,7 +48,10 @@ function NavBar({items,setItems}) {
         </ul>
 
         <div className={styles.CART_CONTEINER}>
-          <AiOutlineShoppingCart className={styles.CART_ICON} />
+          <Icon
+            className={styles.CART_ICON}
+            icon="ant-design:shopping-cart-outlined"
+          />
 
           <div className={styles.CART_NOTIFICATIONS}>{items}</div>
         </div>
