@@ -8,7 +8,7 @@ const OtherProducts = () => {
   return (
     <>
       <div className={styles.CONTAINER}>
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <div className={styles.TITLE}>
             <p>{texto.texto1}</p>
             <p className="text-orange1">{texto.texto2}</p>

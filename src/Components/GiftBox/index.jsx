@@ -12,7 +12,7 @@ const GiftBox = () => {
           <img src={vegetablesBasket} alt="vegetablesBasket" className={styles.IMAGE}/>
         </div>
 
-        <div>
+        <div className="flex flex-col items-center md:items-start">
           <div className={styles.TITLE}>
             <p>{texto.texto1}</p>
             <p className="text-orange1">{texto.texto2}</p>

@@ -1,7 +1,7 @@
-import sCebollaMorada from "../Images/Products/sCebollaMorada.jpg"
-import sTomatePerita from "../Images/Products/sTomatePerita.jpg"
-import sEspinaca from "../Images/Products/sEspinaca.jpg"
-import sPerejil from "../Images/Products/sPerejil.jpg"
+import sCebollaMorada from "../Images/Products/sCebollaMorada.png"
+import sTomatePerita from "../Images/Products/sTomatePerita.png"
+import sEspinaca from "../Images/Products/sEspinaca.png"
+import sPerejil from "../Images/Products/sPerejil.png"
 import sZanahoriaCriolla from "../Images/Products/sZanahoriaCriolla.jpg"
 import sKaleMix from "../Images/Products/sKaleMix.jpg"
 
