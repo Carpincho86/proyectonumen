@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <div>
       <div className={styles.TITLE}>
-        <p>{texto.texto1} <span className="text-orange1"> {texto.texto2}</span></p>
+        <h2 className={styles.STYLE_TITLE}>{texto.texto1} <span className="text-orange1"> {texto.texto2}</span></h2>
       </div>
       <div className={styles.GALLERY_CONTAINER}>
         <Carousel cols={5}    // cantidad de columnas del carusel

@@ -1,5 +1,7 @@
 export const TITLE = "flex flex-row justify-center p-8 text-4xl text-green1"
 
+export const STYLE_TITLE = "text-center text-2xl font-sans font-semibold italic sm:text-3xl";
+
 export const GALLERY_CONTAINER = "items-center"
 
 export const CAROUSEL_CONTAINER = "flex flex-row items-center"
