@@ -1,13 +1,13 @@
-export const NAV =
-  "flex items-center justify-around text-black bg-[#f9fafb] h-35 p-4 pt-6  ";
+export const NAV =" flex items-center justify-around text-black bg-[#f9fafb] pl-4 pr-4 pt-0 pb-0   h-20   sm:pl-4 pr-4 pt-16 pb-16 sm:h-35 "
+//"flex items-center justify-around text-black bg-[#f9fafb]  h-35 pt-1 pb-1 px-4 sm:h-35  pt-6 pb-6 px-45 ";/*}
 
-export const IMAGE = "cursor-pointer h-20 mx-3 my-2 ";
+export const IMAGE = "cursor-pointer h-20 mx-3 my-2  ";
 
 export const MENU_CONTEINER =
   " px-4 ml-6 sm:h-70 w-50 p-10 sm:text-xl md:hidden";
 
 export const MENU =
-  "bg-[#98AD21] font-bold grid grid-rows-5 text-center  item-center items-baseline gap-x-5	 absolute top-40 w-full h-full -mt-8 p-5      md:hidden";
+  " font-bold grid grid-rows-5 text-center  item-center items-baseline gap-x-5	 absolute top-40 w-full h-full -mt-8 p-5      md:hidden";
 
 export const MENU_NONE = "hidden";
 
