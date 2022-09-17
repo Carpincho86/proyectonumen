@@ -36,7 +36,6 @@ const DiscountCards = ({items,setItems}) => {
         <p>{texto.texto1}</p>
         <p className="text-orange1">{texto.texto2}</p>
       </div>
-    
       <div className={styles.CARD_CONTAINER}> 
         {listado.map((producto) => (
           <div className={styles.CARD} key={producto.id}>
@@ -54,5 +53,6 @@ const DiscountCards = ({items,setItems}) => {
     </>
   )
 }
+
 
 export default DiscountCards
